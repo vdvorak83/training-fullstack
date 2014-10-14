@@ -21,8 +21,8 @@
     <import resource="config/thymeleaf-context.xml"/>
 
     <!--component scanners-->
-    <context:component-scan base-package="net.incuventure.template.api.service"/>
-    <context:component-scan base-package="net.incuventure.template.web.ajax" />
-    <context:component-scan base-package="net.incuventure.template.web.controller" />
+    <context:component-scan base-package="net.incuventure.kitchensink.api.service"/>
+    <context:component-scan base-package="net.incuventure.kitchensink.web.ajax" />
+    <context:component-scan base-package="net.incuventure.kitchensink.web.controller" />
 
 </beans>

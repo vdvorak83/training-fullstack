@@ -119,13 +119,6 @@
             <version>${hsqldb.version}</version>
         </dependency>
 
-        <!-- todo: figure out when this is needed -->
-        <!--<dependency>-->
-            <!--<groupId>cglib</groupId>-->
-            <!--<artifactId>cglib</artifactId>-->
-            <!--<version>2.2.2</version>-->
-        <!--</dependency>-->
-
         <!-- Connection Pooling -->
         <dependency>
             <groupId>commons-dbcp</groupId>
@@ -168,11 +161,11 @@
         <!--end test-->
 
         <!-- servlet API workaround for RESTEasy+Spring -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>javax.servlet</groupId>-->
+            <!--<artifactId>javax.servlet-api</artifactId>-->
+            <!--<version>3.1.0</version>-->
+        <!--</dependency>-->
 
         <!-- Thymeleaf -->
         <dependency>
@@ -193,6 +186,12 @@
             <groupId>net.sourceforge.nekohtml</groupId>
             <artifactId>nekohtml</artifactId>
             <version>1.9.18</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
         </dependency>
 
     </dependencies>

@@ -5,11 +5,12 @@
 </head>
 <body>
     this is the login view<br/>
-    <div th:text="${message}"/>
-    xxxx
+    <!--<div th:text="${#maps.size(mymap)}"></div>-->
+    <div th:text="${message}"></div>
     <br/>
     <form method="POST" action="login" th:object="${loginForm}" th:action="@{login}">
-        <input name="userid"/>
+        <input name="userid" id="username" th:value="${mymap?.username}"/><br/>
+        <input name="pwd" id="pwd" type="password"/><br/>
         <input type="submit" value="login">
     </form>
     <br/>

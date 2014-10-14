@@ -1,4 +1,4 @@
-package net.incuventure.template.api.service
+package net.incuventure.kitchensink.web.ajax
 
 import com.google.gson.Gson
 import org.springframework.stereotype.Component
@@ -6,19 +6,15 @@ import org.springframework.stereotype.Component
 import javax.ws.rs.GET
 import javax.ws.rs.Path
 import javax.ws.rs.Produces
-import javax.ws.rs.core.Context
-import javax.ws.rs.core.MediaType
-import javax.ws.rs.core.MultivaluedMap
-import javax.ws.rs.core.UriInfo
-import javax.ws.rs.core.Response
+import javax.ws.rs.core.*
 
-@Path("/training")
+@Path("/rest")
 @Component
-class TrainingRestServices {
+class SampleAjaxService {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("/testEvent")
+    @Path("/test")
     public Response testEvent(@Context UriInfo allUri) {
 
         Gson gson = new Gson();
@@ -37,7 +33,7 @@ class TrainingRestServices {
 
         try {
 
-            returnMap.put("status", "ok");
+            returnMap.put("status", "ok@ajax");
 
         } catch (Exception e) {
 
