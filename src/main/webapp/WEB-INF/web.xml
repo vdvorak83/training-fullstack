@@ -32,7 +32,22 @@
         <servlet-class>
             org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher
         </servlet-class>
+        <load-on-startup>2</load-on-startup>
     </servlet>
+
+    <!--<servlet>-->
+        <!--<servlet-name>CXFServlet</servlet-name>-->
+        <!--<display-name>CXF Servlet</display-name>-->
+        <!--<servlet-class>-->
+            <!--org.apache.cxf.transport.servlet.CXFServlet-->
+        <!--</servlet-class>-->
+        <!--<load-on-startup>3</load-on-startup>-->
+    <!--</servlet>-->
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>CXFServlet</servlet-name>-->
+        <!--<url-pattern>/services/*</url-pattern>-->
+    <!--</servlet-mapping>-->
 
     <!-- Spring MVC -->
     <servlet>
@@ -42,7 +57,8 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>mvc-dispatcher</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/*</url-pattern>
+
     </servlet-mapping>
 
     <servlet-mapping>
