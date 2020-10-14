@@ -13,7 +13,7 @@
         <!--https://jira.spring.io/browse/SPR-12151-->
         <springframework.version>4.1.1.RELEASE</springframework.version>
         <resteasy.version>3.0.9.Final</resteasy.version>
-        <junit.version>4.7</junit.version>
+        <junit.version>4.13.1</junit.version>
         <hibernate.version>4.1.4.Final</hibernate.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <hsqldb.version>1.8.0.10</hsqldb.version>
