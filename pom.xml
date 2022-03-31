@@ -11,7 +11,7 @@
 
     <properties>
         <!--https://jira.spring.io/browse/SPR-12151-->
-        <springframework.version>4.1.1.RELEASE</springframework.version>
+        <springframework.version>5.3.18</springframework.version>
         <resteasy.version>3.0.9.Final</resteasy.version>
         <junit.version>4.7</junit.version>
         <hibernate.version>4.1.4.Final</hibernate.version>
